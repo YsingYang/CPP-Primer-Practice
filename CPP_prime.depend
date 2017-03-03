@@ -1,0 +1,185 @@
+# depslib dependency file v1.0
+1479194065 source:/home/ysing/codeblock Projects/CPP_prime/Charact7_Person.cpp
+	<stdio.h>
+	<iostream>
+
+1480650860 source:/home/ysing/codeblock Projects/CPP_prime/Test_NOT.cpp
+	<stdio.h>
+	<iostream>
+	<vector>
+
+1487234768 source:/home/ysing/codeblock Projects/CPP_prime/16.2.cpp
+	<stdio.h>
+	<iostream>
+
+1487235314 source:/home/ysing/codeblock Projects/CPP_prime/16.4.cpp
+	<stdio.h>
+	<iostream>
+	<vector>
+	<list>
+
+1487240069 source:/home/ysing/codeblock Projects/CPP_prime/16.5.cpp
+	<stdio.h>
+	<iostream>
+	<vector>
+	<list>
+
+1487319376 source:/home/ysing/codeblock Projects/CPP_prime/16.6.cpp
+	<iostream>
+	<vector>
+	<list>
+	<string>
+
+1487319385 source:/home/ysing/codeblock Projects/CPP_prime/Chapter16/16.7.cpp
+	<stdio.h>
+	<vector>
+	<iostream>
+
+1487418193 source:/home/ysing/codeblock Projects/CPP_prime/Chapter6/6.45.cpp
+
+1487581589 source:/home/ysing/codeblock Projects/CPP_prime/Chapter7/7.1.1.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"/home/ysing/codeblock Projects/CPP_prime/Chapter7/Sales_Data.h"
+
+1487589734 /home/ysing/codeblock Projects/CPP_prime/Chapter7/Sales_Data.h
+	<iostream>
+	<string>
+	<fstream>
+
+1487589505 source:/home/ysing/codeblock Projects/CPP_prime/Chapter7/Charact7_Person.cpp
+	<stdio.h>
+	<iostream>
+	</home/ysing/codeblock Projects/CPP_prime/Chapter7/Person.h>
+
+1487684179 source:/home/ysing/codeblock Projects/CPP_prime/Chapter7/Screen.cpp
+	<stdio.h>
+	<iostream>
+	<string>
+	"/home/ysing/codeblock Projects/CPP_prime/Chapter7/Screen.h"
+
+1487684114 /home/ysing/codeblock Projects/CPP_prime/Chapter7/Screen.h
+	<stdio.h>
+	<iostream>
+	<vector>
+
+1487683258 source:/home/ysing/codeblock Projects/CPP_prime/Chapter7/7.3.3.cpp
+	<stdio.h>
+	<iostream>
+	"/home/ysing/codeblock Projects/CPP_prime/Chapter7/7.3.3.h"
+
+1487683310 /home/ysing/codeblock Projects/CPP_prime/Chapter7/7.3.3.h
+	<stdio.h>
+	<iostream>
+
+1487856111 source:/home/ysing/codeblock Projects/CPP_prime/Chapter7/7.58.cpp
+	<stdio.h>
+	<iostream>
+	</home/ysing/codeblock Projects/CPP_prime/Chapter7/7.58.h>
+
+1487927203 source:/home/ysing/codeblock Projects/CPP_prime/Chapter10/10.11.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+	<algorithm>
+
+1487927641 source:/home/ysing/codeblock Projects/CPP_prime/Chapter7/10.13.cpp
+	<stdio.h>
+	<iostream>
+	<algorithm>
+
+1487933297 source:/home/ysing/codeblock Projects/CPP_prime/10.14.cpp
+	<stdio.h>
+	<iostream>
+
+1488013422 source:/home/ysing/codeblock Projects/CPP_prime/Chapter10/10.20.cpp
+	<stdio.h>
+	<iostream>
+	<vector>
+	<algorithm>
+
+1488013763 source:/home/ysing/codeblock Projects/CPP_prime/Chapter10/10.21.cpp
+	<stdio.h>
+	<iostream>
+	<vector>
+	<algorithm>
+
+1488022774 source:/home/ysing/codeblock Projects/CPP_prime/Chapter10/10.24.cpp
+	<stdio.h>
+	<iostream>
+	<functional>
+	<algorithm>
+
+1488109815 source:/home/ysing/codeblock Projects/CPP_prime/Chapter10/10.29.cpp
+	<stdio.h>
+	<iostream>
+	<vector>
+	<fstream>
+	<iterator>
+	<algorithm>
+
+1488110358 source:/home/ysing/codeblock Projects/CPP_prime/Chapter10/10.33.cpp
+	<stdio.h>
+	<iostream>
+	<vector>
+	<fstream>
+	<iterator>
+	<algorithm>
+
+1488112270 source:/home/ysing/codeblock Projects/CPP_prime/Chapter10/10.42.cpp
+	<stdio.h>
+	<iostream>
+	<list>
+	<algorithm>
+	<ostream>
+
+1488198637 source:/home/ysing/codeblock Projects/CPP_prime/Chapter12/12.2.cpp
+	<memory>
+	<iostream>
+	<vector>
+	<stdio.h>
+	"/home/ysing/codeblock Projects/CPP_prime/Chapter12/12.2.h"
+	<initializer_list>
+
+1488198661 /home/ysing/codeblock Projects/CPP_prime/Chapter12/12.2.h
+	<memory>
+	<iostream>
+	<vector>
+	<stdio.h>
+	<stdexcept>
+	<string>
+	<initializer_list>
+
+1488276452 source:/home/ysing/codeblock Projects/CPP_prime/Chapter12/12.6.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+
+1488276487 source:/home/ysing/codeblock Projects/CPP_prime/Chapter12/shared_ptr_Test.cpp
+	<memory>
+	<stdio.h>
+	<iostream>
+
+1488351706 source:/home/ysing/codeblock Projects/CPP_prime/Test1divide3.cpp
+	<stdio.h>
+	<iostream>
+
+1488370865 source:/home/ysing/codeblock Projects/CPP_prime/Chapter12/12.14.cpp
+	<stdio.h>
+	<iostream>
+	<memory>
+
+1488458402 source:/home/ysing/codeblock Projects/CPP_prime/Chapter12/12.20.cpp
+	<stdio.h>
+	<iostream>
+	<memory>
+	<vector>
+	<fstream>
+	</home/ysing/codeblock Projects/CPP_prime/Chapter12/12.2.h>
+
+1488542675 source:/home/ysing/codeblock Projects/CPP_prime/Chapter12/12.26.cpp
+	<stdio.h>
+	<iostream>
+	<memory>
+
