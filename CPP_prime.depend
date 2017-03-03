@@ -178,8 +178,15 @@
 	<fstream>
 	</home/ysing/codeblock Projects/CPP_prime/Chapter12/12.2.h>
 
-1488542675 source:/home/ysing/codeblock Projects/CPP_prime/Chapter12/12.26.cpp
+1488544528 source:/home/ysing/codeblock Projects/CPP_prime/Chapter12/12.26.cpp
 	<stdio.h>
 	<iostream>
 	<memory>
+	</home/ysing/codeblock Projects/CPP_prime/Chapter12/TextQuery.h>
+
+1488547103 source:/home/ysing/codeblock Projects/CPP_prime/Chapter12/TextQuery.cpp
+	<stdio.h>
+	<iostream>
+	<fstream>
+	</home/ysing/codeblock Projects/CPP_prime/Chapter12/TextQuery.h>
 

@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<iostream>
 #include<memory>
+#include</home/ysing/codeblock Projects/CPP_prime/Chapter12/TextQuery.h>
 using namespace std;
 #define N 5
 
@@ -14,7 +15,7 @@ int main(){
         alloc.construct(q++,"as");
         count++;
     }
-    while(q!=p){
+    while(q!=p){//注意q是指向尾指针的.
         cout<<*(--q)<<endl;
         alloc.destroy(q);
     }

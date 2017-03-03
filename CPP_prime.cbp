@@ -33,8 +33,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Chapter12/12.14.cpp" />
 		<Unit filename="Chapter12/12.2.h" />
+		<Unit filename="Chapter12/TextQuery.cpp" />
+		<Unit filename="Chapter12/TextQuery.h" />
 		<Unit filename="Chapter7/7.3.3.h" />
 		<Unit filename="Chapter7/7.58.h" />
 		<Unit filename="Chapter7/Debug.h" />
