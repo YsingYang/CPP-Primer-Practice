@@ -190,3 +190,23 @@
 	<fstream>
 	</home/ysing/codeblock Projects/CPP_prime/Chapter12/TextQuery.h>
 
+1488622589 source:/home/ysing/codeblock Projects/CPP_prime/Chapter12/TextQuery_Version2.cpp
+	<stdio.h>
+	<memory>
+	<iostream>
+	<map>
+	<vector>
+	<unordered_set>
+	<sstream>
+	<fstream>
+	<set>
+	<istream>
+	<ostream>
+	<algorithm>
+
+1488724217 source:/home/ysing/codeblock Projects/CPP_prime/Chapter13/13.5.cpp
+	<stdio.h>
+	<iostream>
+	<string>
+	</home/ysing/codeblock Projects/CPP_prime/Chapter13/13.8.h>
+
