@@ -204,9 +204,36 @@
 	<ostream>
 	<algorithm>
 
-1488724217 source:/home/ysing/codeblock Projects/CPP_prime/Chapter13/13.5.cpp
+1488724283 source:/home/ysing/codeblock Projects/CPP_prime/Chapter13/13.5.cpp
 	<stdio.h>
 	<iostream>
 	<string>
 	</home/ysing/codeblock Projects/CPP_prime/Chapter13/13.8.h>
+
+1488789688 source:/home/ysing/codeblock Projects/CPP_prime/random.cpp
+	<iostream>
+	<vector>
+	<numeric>
+	<limits>
+	<random>
+
+1488897224 source:/home/ysing/codeblock Projects/CPP_prime/Chapter13/13.13.cpp
+	<iostream>
+	<stdio.h>
+	</home/ysing/codeblock Projects/CPP_prime/Chapter13/13.13.h>
+
+1488801133 source:/home/ysing/codeblock Projects/CPP_prime/Chapter16/13.16.cpp
+	<iostream>
+	<iostream>
+
+1488805274 source:/home/ysing/codeblock Projects/CPP_prime/Chapter13/13.18.cpp
+	</home/ysing/codeblock Projects/CPP_prime/Chapter13/13.18.h>
+	<stdio.h>
+
+1488897082 source:/home/ysing/codeblock Projects/CPP_prime/Chapter13/12.27.cpp
+	"/home/ysing/codeblock Projects/CPP_prime/Chapter13/13.27_Has_Ptr.h"
+
+1488897103 /home/ysing/codeblock Projects/CPP_prime/Chapter13/13.27_Has_Ptr.h
+	<stdio.h>
+	<iostream>
 

@@ -6,12 +6,13 @@ using std::string;
 
 class HasPtr{
 public:
-    HasPtr(const std::string &s = string()):ps(new string(s)),i(0) {}
+    HasPtr(const std::string &s = string()):ps(new string(s)),i(0) {}//constructor
 
     HasPtr(HasPtr &hp){
         ps = new string(*hp.ps);
         i = hp.i;
-    }
+    }//copy constructor
+
     HasPtr& operator=(const HasPtr& hp){
         if(this != &hp){
             string *tmp = new string(*hp.ps);
@@ -19,9 +20,13 @@ public:
             ps = tmp;
             i = hp.i;
         }
-
         return *this;
+    }//define = operation
+
+    ~HasPtr(){
+        delete(ps);
     }
+
 private:
     string *ps;
     int i;
