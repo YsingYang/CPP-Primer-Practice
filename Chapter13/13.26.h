@@ -1,7 +1,4 @@
 
-#ifndef CP5_ex13_26_h
-#define CP5_ex13_26_h
-
 #include <vector>
 #include <string>
 #include <initializer_list>
@@ -92,4 +89,18 @@ private:
     size_t curr;
 };
 
-#endif
+ConstStrBlobPtr StrBlob::begin() const // should add const
+{
+    return ConstStrBlobPtr(*this);
+}
+ConstStrBlobPtr StrBlob::end() const // should add const
+{
+    return ConstStrBlobPtr(*this, data->size());
+}
+
+StrBlob& StrBlob::operator=(const StrBlob& sb)
+{
+    data = std::make_shared<vector<string>>(*sb.data);
+    return *this;
+}
+
