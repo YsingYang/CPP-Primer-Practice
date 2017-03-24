@@ -32,5 +32,5 @@ void f(const X &rx, X x)
     vec.reserve(2);
     vec.push_back(rx);
     vec.push_back(x);
-    std::cout<<"vec"<<std::endl;
+    std::cout<<"vec"<<std::endl
 }

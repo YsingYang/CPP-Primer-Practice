@@ -51,8 +51,8 @@
 		<Unit filename="Chapter7/Person.h" />
 		<Unit filename="Chapter7/Sales_Data.h" />
 		<Unit filename="Chapter7/Screen.h" />
+		<Unit filename="TestDynamic_binding.cpp" />
 		<Unit filename="nowcodeTest/OOProgramming.h" />
-		<Unit filename="nowcodeTest/OOprogramming.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
