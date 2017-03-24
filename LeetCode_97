@@ -1,0 +1,86 @@
+class Solution {
+/***
+ * dp方法，dp[i][j]表示对于指针s1[0-i-1],s2[0-j-1]指到s3[0-i+j-1]只是可以组成interleaving
+ * 这里我们不能按照之前LCS ,LIS，那样初始化[0]数组，因为它们并不是固定的某个值，
+ * 所以分别处理
+ * if(i==0&&j==0)
+                    dp[i][j] = true;
+                else if(i==0)
+                    dp[i][j] = dp[i][j-1]&&s2[j-1]==s3[i+j-1];
+                else if(j==0)
+                    dp[i][j] = dp[i-1][j]&&s1[i-1] == s3[i+j-1];
+                else
+                    dp[i][j] = (dp[i-1][j]&&s1[i-1]==s3[i+j-1])||(dp[i][j-1]&&s2[j-1]==s3[i+j-1]);
+    当i==0||j==0时，它们的dp递推只能其中一个j-1（i==0）,  i-1(j==0)有关系
+    
+ *  如果都不为0,那么dp[i][j] 就为dp[i-1][j]||dp[i][j-1]有关
+ */
+public:
+    bool isInterleave(string s1, string s2, string s3) {
+        int size1 = s1.size(),size2 = s2.size(),size3 = s3.size();
+        if(size1+size2!=size3)
+            return false;
+        vector<vector<bool>> dp(size1+1,vector<bool> (size2+1,false));
+        for(int i=0;i<=size1;++i){
+            for(int j=0;j<=size2;++j){
+                if(i==0&&j==0)
+                    dp[i][j] = true;
+                else if(i==0)
+                    dp[i][j] = dp[i][j-1]&&s2[j-1]==s3[i+j-1];
+                else if(j==0)
+                    dp[i][j] = dp[i-1][j]&&s1[i-1] == s3[i+j-1];
+                else
+                    dp[i][j] = (dp[i-1][j]&&s1[i-1]==s3[i+j-1])||(dp[i][j-1]&&s2[j-1]==s3[i+j-1]);
+            }
+        }
+        return dp[size1][size2];
+    }
+};
+
+
+struct myhasher{
+    size_t operator()(const pair<int,int> &p1) const {//为什么这里不加const 就错了无法
+        return p1.first ^ p1.second ^ 3;
+    }
+};
+
+class Solution {
+unordered_map<pair<int,int>,bool,myhasher> mp;
+
+
+/***
+ * 基于memorization的dfs搜索方法
+ * 这里与unordered_map<pair<int,int>,bool,myhasher> mp;记录p1,p2指针再i,j位置时的结果
+ * 这里不能用substr做key,因为访问到该substr也会是有不同的状态的
+ * 通过dfs调用 ，如果mp里面又结果，直接返回结果，当index==s3.size()为递归出口
+ */
+public:
+    bool isInterleave(string s1, string s2, string s3) {
+        int p1 = 0;
+        int p2 = 0;
+        return check(s1,s2,s3,0,0,0);
+    }
+    
+    bool check(const string &s1,const string &s2,const string &s3,int p1,int p2,int index){
+        if(index==s3.size()){
+            return p1==s1.size()&&p2==s2.size();
+        }
+        bool res;
+        if(mp.find({p1,p2})!=mp.end()){
+            return mp[{p1,p2}];
+        }
+        if(s1[p1]==s3[index]&&(p2==s2.size()||s2[p2]!=s3[index]))
+            res = check(s1,s2,s3,p1+1,p2,index+1);
+        else if((p1==s1.size()||s1[p1]!=s3[index])&&s2[p2]==s3[index])
+            res = check(s1,s2,s3,p1,p2+1,index+1);
+        else if(p1<s1.size()&&p2<s2.size()&&s1[p1]==s3[index]&&s2[p2]==s3[index]){
+            res = check(s1,s2,s3,p1+1,p2,index+1)||check(s1,s2,s3,p1,p2+1,index+1);
+        }
+        else
+            res = false;
+        //cout<<tmp<<"   "<<(int)(res)<<p1<<p2<<endl;
+        mp[{p1,p2}] = res;
+        return res;
+    }
+    
+};
