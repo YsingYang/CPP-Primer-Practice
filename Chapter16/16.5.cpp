@@ -4,17 +4,22 @@
 #include<list>
 
 using namespace std;
-template<typename T>
+/*template<typename T>
 void print(T &arr){
     for(auto &i:arr){
         cout<<i<<"   ";
         i = 0;
     }
-}
+}*/
 
+template<typename T,unsigned N>
+void printf(T  (&a)[N]){
+    for(int i=0;i<N;++i){
+        cout<<a[i]<<endl;
+    }
+}
 int main(){
-    vector<int>  a1= {1,2,3,4,5,6,7};
-    print(a1);
-    print(a1);
+    float a[10] = {1,2,3,4,5,6,7,8,9,10};
+    printf(a);
     return 0;
 }

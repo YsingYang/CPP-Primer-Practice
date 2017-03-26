@@ -31,7 +31,7 @@ int main(){
   //  B &b = static_cast<B&>(a);
 
     B *b = new B();
-    A *a = dynamic_cast<A*>(b);///可以强制转换基类为子类
+    A *a =b;///可以强制转换基类为子类,但dynamic_cast会直接返回一个空指针，直接指向是不行的
     //A *a =
     if(a==nullptr)
         cout<<"123123"<<endl;//会变成空指针
