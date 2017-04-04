@@ -13,7 +13,7 @@ void print(T &arr){
 }*/
 
 template<typename T,unsigned N>
-void printf(T  (&a)[N]){
+void printf(T  (&a)[N]){//注意这个括号
     for(int i=0;i<N;++i){
         cout<<a[i]<<endl;
     }

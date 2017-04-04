@@ -45,13 +45,17 @@
 		<Unit filename="Chapter13/string.h" />
 		<Unit filename="Chapter15/15.21_Shape.h" />
 		<Unit filename="Chapter15/15.３_Quote.h" />
+		<Unit filename="Chapter16/16.12Blob_BlobPtr.h" />
+		<Unit filename="Chapter16/16.14_Screen.h" />
+		<Unit filename="Chapter16/16.19_container.h" />
+		<Unit filename="Chapter16/16.28_Shared_ptr.h" />
+		<Unit filename="Chapter16/TestTemplate.cpp" />
 		<Unit filename="Chapter7/7.3.3.h" />
 		<Unit filename="Chapter7/7.58.h" />
 		<Unit filename="Chapter7/Debug.h" />
 		<Unit filename="Chapter7/Person.h" />
 		<Unit filename="Chapter7/Sales_Data.h" />
 		<Unit filename="Chapter7/Screen.h" />
-		<Unit filename="TestDynamic_binding.cpp" />
 		<Unit filename="nowcodeTest/OOProgramming.h" />
 		<Extensions>
 			<code_completion />
