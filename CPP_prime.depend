@@ -339,3 +339,31 @@
 	<iostream>
 	<semaphore.h>
 
+1491479380 source:/home/ysing/codeblock Projects/CPP_prime/Chapter16/16.62hasher.cpp
+	</home/ysing/codeblock Projects/CPP_prime/Chapter16/16.62_namespace.h>
+	<unordered_set>
+
+1491481741 source:/home/ysing/codeblock Projects/CPP_prime/Chapter16/16.65specialization.cpp
+	<stdio.h>
+	<iostream>
+	<cstring>
+	<sstream>
+
+1491708257 source:/home/ysing/codeblock Projects/CPP_prime/Basic_transform.cpp
+	<stdio.h>
+	<iostream>
+	<string.h>
+	<stdlib.h>
+	<cstdlib>
+
+1491902728 source:/home/ysing/codeblock Projects/CPP_prime/Chapter17/Regex.cpp
+	<regex>
+	<stdio.h>
+	<boost/regex.hpp>
+
+1492433517 source:/home/ysing/codeblock Projects/CPP_prime/Chapter17/17.1_tuple.cpp
+	<stdio.h>
+	<iostream>
+	<tuple>
+	<vector>
+

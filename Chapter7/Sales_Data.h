@@ -1,15 +1,16 @@
 #include <iostream>
 #include <string>
 #include<fstream>
-
+//#include</home/ysing/codeblock Projects/CPP_prime/Chapter16/16.62_namespace.h>
 class Sales_data {
+    friend std::hash<Sales_data>;
     friend std::istream &read(std::istream &is,Sales_data &item);
     friend std::ostream &print(std::ostream &os,const Sales_data &item);
     friend Sales_data add(const Sales_data &lhs, const Sales_data &rhs);
     friend std::istream& operator>>(std::istream&, Sales_data&); // input
     friend std::ostream& operator<<(std::ostream&, const Sales_data&); // output
     friend Sales_data operator+(const Sales_data&, const Sales_data&); // addition
-
+    friend bool operator==(const Sales_data &, const Sales_data &);
 
 public:
     Sales_data(std::string bn,unsigned us,double rv):bookNo(bn),units_sold(us),revenue(rv){};
@@ -27,7 +28,10 @@ public:
         return bookNo;
     }
 
-    Sales_data* combination(const Sales_data &);//如果该构造函数定义在外部，需要预先声明;
+    Sales_data* combination(const Sales_data &rhs){//如果该构造函数定义在外部，需要预先声明;
+            revenue += rhs.revenue;
+            return this;
+    }
 
     //重载操作
     Sales_data & operator+=(const Sales_data &sd){
@@ -98,3 +102,9 @@ Sales_data operator+(const Sales_data &lhs,const Sales_data &rhs){//这个操作
   sum += rhs;//调用+=运算
     return sum;
 }
+
+bool operator==(const Sales_data &lhs, const Sales_data &rhs){
+    return lhs.revenue == rhs.revenue&&lhs.bookNo==rhs.bookNo&&lhs.units_sold == rhs.units_sold;
+}
+
+

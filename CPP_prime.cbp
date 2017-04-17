@@ -16,6 +16,10 @@
 					<Add option="-std=c++11" />
 					<Add option="-g" />
 				</Compiler>
+				<Linker>
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_regex.a" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libboost_regex.so" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/CPP_prime" prefix_auto="1" extension_auto="1" />
@@ -49,7 +53,9 @@
 		<Unit filename="Chapter16/16.14_Screen.h" />
 		<Unit filename="Chapter16/16.19_container.h" />
 		<Unit filename="Chapter16/16.28_Shared_ptr.h" />
-		<Unit filename="Chapter16/TestTemplate.cpp" />
+		<Unit filename="Chapter16/16.62_namespace.h" />
+		<Unit filename="Chapter16/16.63VectorTemplate.h" />
+		<Unit filename="Chapter17/Regex.cpp" />
 		<Unit filename="Chapter7/7.3.3.h" />
 		<Unit filename="Chapter7/7.58.h" />
 		<Unit filename="Chapter7/Debug.h" />
